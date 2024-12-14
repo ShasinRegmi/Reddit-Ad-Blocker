@@ -1,12 +1,19 @@
 {
     "name": "My Extension",
     "manifest_version": 3,
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "My Extension",
     "action":{
         "default_popup": "popup.html",
-        "default_icon": "icon16.jpeg"
-            
-   } 
+        "default_icon": "icon128.jpeg"          
+   }, 
 
+   "content_scripts" : [
+    {
+    "js": ["adblock.js"],
+    "matches": ["*://*.youtube.com/*", "*://youtube.com/*"]
+    }
+],
+
+   "permissions": ["activeTab","scripting"]
 }
