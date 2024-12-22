@@ -5,13 +5,13 @@
     "description": "My Extension",
     "action":{
         "default_popup": "popup.html",
-        "default_icon": "icon128.jpeg"          
+        "default_icon": "icon128.png"          
    }, 
 
    "content_scripts" : [
     {
     "js": ["adblock.js"],
-    "matches": ["*://*.youtube.com/*", "*://youtube.com/*"]
+    "matches": ["*://*.reddit.com/*", "*://reddit.com/**"]
     }
 ],
 
